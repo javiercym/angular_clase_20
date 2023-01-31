@@ -1,0 +1,12 @@
+<br><br>
+<div class="container">
+    <div>
+        <button type="button" class="btn btn-primary" (click)="mostrarUsuario()">Mostrar</button>
+    </div>
+    <br><br><br>
+    <div *ngIf="mostrar">
+        <ul *ngFor="let user of users">
+            <li>{{ user.name }}</li>
+        </ul>
+    </div>
+</div>
